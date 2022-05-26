@@ -17,7 +17,7 @@ $item->id = isset($_GET['id']) ? $_GET['id'] : die();
 $item->getPersonById();
 if($item->name != null){
 	// create array
-	$emp_arr = array(
+	$personArr = array(
 		"id" =>  $item->id,
 		"document_type_id" => $item->document_type_id,
 		"document" => $item->document,
@@ -30,7 +30,7 @@ if($item->name != null){
 	);
   
 	http_response_code(200);
-	echo json_encode($emp_arr);
+	echo json_encode($personArr);
 }
   
 else{
