@@ -9,7 +9,7 @@
 			"name": "Person",
 			"item": [
 				{
-					"name": "CreatePerson",
+					"name": "Create",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -91,7 +91,7 @@
 					"response": []
 				},
 				{
-					"name": "UpdatePerson",
+					"name": "Update",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -122,7 +122,7 @@
 					"response": []
 				},
 				{
-					"name": "DeletePerson",
+					"name": "Delete",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -146,6 +146,162 @@
 								"BasicCrud",
 								"api",
 								"person",
+								"Delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DocumentType",
+			"item": [
+				{
+					"name": "CreateDocumentType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CE\",\r\n    \"status\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://geancarloleiva.com/BasicCrud/api/documentType/Create.php",
+							"protocol": "https",
+							"host": [
+								"geancarloleiva",
+								"com"
+							],
+							"path": [
+								"BasicCrud",
+								"api",
+								"documentType",
+								"Create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://geancarloleiva.com/BasicCrud/api/documentType/ReadAll.php",
+							"protocol": "https",
+							"host": [
+								"geancarloleiva",
+								"com"
+							],
+							"path": [
+								"BasicCrud",
+								"api",
+								"documentType",
+								"ReadAll.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://geancarloleiva.com/BasicCrud/api/documentType/ReadById.php/?id=4",
+							"protocol": "https",
+							"host": [
+								"geancarloleiva",
+								"com"
+							],
+							"path": [
+								"BasicCrud",
+								"api",
+								"documentType",
+								"ReadById.php",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"DNI\",\r\n    \"status\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://geancarloleiva.com/BasicCrud/api/documentType/Update.php",
+							"protocol": "https",
+							"host": [
+								"geancarloleiva",
+								"com"
+							],
+							"path": [
+								"BasicCrud",
+								"api",
+								"documentType",
+								"Update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://geancarloleiva.com/BasicCrud/api/documentType/Delete.php",
+							"protocol": "https",
+							"host": [
+								"geancarloleiva",
+								"com"
+							],
+							"path": [
+								"BasicCrud",
+								"api",
+								"documentType",
 								"Delete.php"
 							]
 						}
